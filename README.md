@@ -1,14 +1,14 @@
 <h1 align="center">Talking Text</h1>
 
-Talking Text is a program that can convert the text string to speak i now it is common but you can also save what you converted text as sound to mp3 file. btw their have two mode the `girl` voice and `boy` voice.  
+Talking Text is a program that can convert the text string to speak i now it is standard but you can also save what you converted text as sound to an mp3 file. by the way, there have two modes the `girl` voice and the `boy` voice.  
 
 
 
 ##### setup: follow the setup :)
 
--- download the file using this command and also i expected that you have installed the `git bush` in your windows because the programming language I've used is c#. 
+-- download the file using this command also I expected that you had installed the `git bush` in your windows because the programming language I've used is c#. 
 
--- open any terminal in windows commonly is `cmd`, in `cmd` type `git clone ` in `Talking Text` folder find the  `build.bat` and double click the `build.bat` to build the program in bin folder.
+-- Open any terminal in Windows commonly is `cmd`, in `cmd` type `git clone ` in the `Talking Text` folder find the  `build.bat` and double click the `build.bat` to build the program in the bin folder.
 
 
 
