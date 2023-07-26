@@ -8,7 +8,7 @@ Talking Text is a program that can convert the text string to speak i now it is 
 
 -- download the file using this command also I expected that you had installed the `git bush` in your windows because the programming language I've used is c#. 
 
--- Open any terminal in Windows commonly is `cmd`, in `cmd` type `git clone ` in the `Talking Text` folder find the  `build.bat` and double click the `build.bat` to build the program in the bin folder.
+-- Open any terminal in Windows commonly is `cmd`, in `cmd` type `git clone https://github.com/git-shad/Talking-Text.git` in the `Talking Text` folder find the  `build.bat` and double click the `build.bat` to build the program in the bin folder.
 
 
 
