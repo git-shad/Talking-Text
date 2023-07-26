@@ -1,0 +1,41 @@
+﻿<Window x:Class="Talking_Text.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Takling Text" Height="428" Width="620" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" Foreground="{x:Null}" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Rectangle RadiusY="17" RadiusX="17" MouseDown="DragAni" Opacity="0.92" >
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-86.987" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFD8FFDE" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle RadiusY="17" RadiusX="17" Margin="10,35,10,75" Opacity="0.78" Fill="#FFCBFFC7" Stroke="#FF334D33" Cursor="Hand" StrokeThickness="3" >
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="boy_b"  RadiusY="17" RadiusX="17" Margin="198,370,347,28" Opacity="0.78" Fill="#FFCBFFC7" Stroke="#FF334D33" StrokeThickness="2" MouseDown="BoyButton" MouseEnter="FocusBoyEnableButton" MouseLeave="FocusBoyDisableButton" />
+        <Rectangle x:Name="girl_b" RadiusY="17" RadiusX="17" Margin="278,370,267,28" Opacity="0.78" Fill="#FF334D33" Stroke="#FFCBFFC7" StrokeThickness="2" MouseDown="GirlButton" MouseEnter="FocusGirlEnableButton" MouseLeave="FocusGirlDisableButton" />
+        <Rectangle x:Name="save_b" RadiusY="17" RadiusX="17" Margin="359,370,186,28" Opacity="0.78" Fill="#FFCBFFC7" Stroke="#FF334D33" StrokeThickness="2" MouseDown="SaveButton" MouseEnter="FocusSaveEnableButton" MouseLeave="FocusSaveDisableButton" />
+        <Rectangle x:Name="exit" RadiusY="17" RadiusX="17" Margin="585,5,10,398" Opacity="0.78" Fill="#FFCBFFC7" Stroke="#FF334D33" StrokeThickness="2" MouseDown="ExitButton" />
+        
+        <TextBlock x:Name="boy_text" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Boy" VerticalAlignment="Top" Margin="221,376,0,0" Foreground="#FF3D783D" FontFamily="Courier New" FontSize="16" MouseDown="BoyButton" MouseEnter="FocusBoyEnableButton" MouseLeave="FocusBoyDisableButton"/>
+        <TextBlock x:Name="girl_text" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Girl" VerticalAlignment="Top" Margin="298,376,0,0" Foreground="#FFCBFFC7" FontFamily="Courier New" FontSize="16" MouseDown="GirlButton" MouseEnter="FocusGirlEnableButton" MouseLeave="FocusGirlDisableButton"/>
+        <TextBlock x:Name="save_text" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Save" VerticalAlignment="Top" Margin="378,376,0,0" Foreground="#FF3D783D" FontFamily="Courier New" FontSize="16" MouseDown="SaveButton" MouseEnter="FocusSaveEnableButton" MouseLeave="FocusSaveDisableButton"/>
+        <TextBox x:Name="texttospeak" HorizontalAlignment="Left" Height="318" VerticalAlignment="Top" Width="600" Margin="10,35,0,0" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Padding="8" Foreground="#FF334D33" SelectionBrush="#FFA9DAA9" CaretBrush="#FF3D783D" FontSize="16" FontFamily="Courier New" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+
+    </Grid>
+</Window>
